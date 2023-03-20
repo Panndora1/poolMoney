@@ -67,21 +67,54 @@ btn.addEventListener('click', () => {
     moneyCountEnd = selNumEnd.value;
 
     if (moneyStart == 'dol' && moneyEnd == 'dol') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
+
         resCount = moneyCountEnd / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
     } else if (moneyStart == 'dol' && moneyEnd == 'rub') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
         dolToRub = moneyCountEnd / 77;
         
         resCount = dolToRub / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
     } else if (moneyStart == 'rub' && moneyEnd == 'dol') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
         rubToDol = moneyCountEnd * 77
         resCount = rubToDol / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
     } else if (moneyStart == 'rub' && moneyEnd == 'rub') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
         resCount = moneyCountEnd / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
