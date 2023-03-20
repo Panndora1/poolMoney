@@ -90,6 +90,7 @@ btn.addEventListener('click', () => {
     resInput.value = result;
 
     window.scrollTo(0,document.body.scrollHeight);
+    
 })
 
 
