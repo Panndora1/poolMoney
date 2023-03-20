@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сколько денег поместится в бассейн</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header"></header>
+    <main class="main">
+        <div class="title">
+            <h1 class="title_text">
+                Сколько денег помещается в бассейн
+            </h1>
+        </div>
+        <div class="end container">
+            <div class="money">
+                <p class="money_text text">Выберите валюту в которой считать итоговый результат</p>
+                <select name="choice" class="money_select select text">
+                    <option value="rub" class="money_opt text">Рубли</option>
+                    <option value="dol" class="money_opt text" selected>Доллары</option>
+                    <!--<option value="euro" class="money_opt text">Евро</option>-->
+                  </select>
+            </div>
+            <div class="moneyCount">
+                <p class="moneyCount_text text">Выберите наминал купюры в которой считать итоговый результат</p>
+                <select name="choice" class="moneyCount_select select text">
+                    <option value="100" class="moneyCount_opt text">100</option>
+                    <option value="500" class="moneyCount_opt text" selected>500</option>
+                    <option value="1000" class="moneyCount_opt text">1000</option>
+                  </select>
+            </div>
+        </div>
+        <div class="start container">
+            <div class="moneySum">
+                <p class="moneySum_text text">Выберите валюту в которой будете вводить начальную сумму</p>
+                <select name="choice" class="moneySum_select select text">
+                    <option value="rub" class="moneySum_opt text">Рубли</option>
+                    <option value="dol" class="moneySum_opt text" selected>Доллары</option>
+                    <!--<option value="third" class="moneySum_opt text">Евро</option>-->
+                  </select>
+            </div>
+            <div class="sum">
+                <p class="sum_text text">Введите сумму которую хотите конвертировать в бассейнах</p>
+                <input type="number" name="number" placeholder="0" class="sum_input input text">
+                <!--<div class="calc">
+                    <div class="calc_numbers">
+                        <p class="calc_1 calc_btn text">1</p>
+                        <p class="calc_2 calc_btn text">2</p>
+                        <p class="calc_3 calc_btn text">3</p>
+                        <p class="calc_4 calc_btn text">4</p>
+                        <p class="calc_5 calc_btn text">5</p>
+                        <p class="calc_6 calc_btn text">6</p>
+                        <p class="calc_7 calc_btn text">7</p>
+                        <p class="calc_8 calc_btn text">8</p>
+                        <p class="calc_9 calc_btn text">9</p>
+                        <p class="calc_del calc_btn text">Del</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="res">
+            <button class="btn text" id="down">Рассчитать</button>
+        </div>
+        <div class="resNumber container">
+            <p class="resNumber_text text">Ваш бассейн заполнен на:</p>
+            <div class="resNumber_input">
+                <input type="number" name="resNumber" placeholder="0" class="resNumber_inp input text">
+                <p class="resNumber_per text">%</p>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+</body>
+</html>
