@@ -48,7 +48,7 @@ btn.addEventListener('click', () => {
         }
     }
 
-    for(let i = 0; i < 2; i++) {
+    for(let i = 0; i < 3; i++) {
         if(selNum[0][i].selected == true) {
            // console.log(selNum[0][i])
             moneyCountStart = selNum[0][i].value;
@@ -90,7 +90,7 @@ btn.addEventListener('click', () => {
     resInput.value = result;
 
     window.scrollTo(0,document.body.scrollHeight);
-    
+
 })
 
 
