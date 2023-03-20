@@ -48,7 +48,7 @@ btn.addEventListener('click', () => {
         }
     }
 
-    for(let i = 0; i < 2; i++) {
+    for(let i = 0; i < 3; i++) {
         if(selNum[0][i].selected == true) {
            // console.log(selNum[0][i])
             moneyCountStart = selNum[0][i].value;
@@ -67,21 +67,54 @@ btn.addEventListener('click', () => {
     moneyCountEnd = selNumEnd.value;
 
     if (moneyStart == 'dol' && moneyEnd == 'dol') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
+
         resCount = moneyCountEnd / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
     } else if (moneyStart == 'dol' && moneyEnd == 'rub') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
         dolToRub = moneyCountEnd / 77;
         
         resCount = dolToRub / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
     } else if (moneyStart == 'rub' && moneyEnd == 'dol') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
         rubToDol = moneyCountEnd * 77
         resCount = rubToDol / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
     } else if (moneyStart == 'rub' && moneyEnd == 'rub') {
+        dolToRub = 0;
+        rubToDol = 0;
+
+        resCount = 0;
+        resV = 0;
+
+        result = 0
+
         resCount = moneyCountEnd / moneyCountStart;
         resV = moneyV * resCount
         result = (poolV/100)*resV
@@ -90,6 +123,7 @@ btn.addEventListener('click', () => {
     resInput.value = result;
 
     window.scrollTo(0,document.body.scrollHeight);
+
 })
 
 
